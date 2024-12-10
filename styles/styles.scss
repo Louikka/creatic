@@ -1,0 +1,233 @@
+@font-face {
+    font-family : 'Poppins';
+    src : url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family : 'PoppinsM';
+    src : url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family : 'PoppinsL';
+    src : url('../fonts/Poppins-Light.ttf');
+}
+
+
+
+$font_family_regular : Poppins, sans-serif;
+$font_family_medium : PoppinsM, sans-serif;
+$font_family_light : PoppinsL, sans-serif;
+$font_weight_medium : 500;
+$font_weight_semibold : 600;
+
+
+
+
+
+html {
+    height : 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin : 0;
+    padding : 0;
+
+    background-color : black;
+
+    font-family : $font_family_regular;
+    color : white;
+}
+
+#app-wrapper {
+    position : relative;
+    overflow : hidden;
+
+
+    #header {
+        width : 100vw;
+        height : 120px;
+
+        background-image : linear-gradient(90deg, #10101000 50%, #101010 100%);
+
+
+        #header-container {
+            max-width : 1419px;
+            margin : 0 auto;
+
+
+            #logo {
+                width : 244px;
+                height : 92px;
+                margin-top : 35px;
+
+                float : left;
+                text-align : center;
+
+
+                #logo-text1 {
+                    height : 66px;
+
+                    font-size : 50px;
+                    font-weight : $font_weight_semibold;
+                    color : #6D95FC;
+                    line-height : auto;
+                    letter-spacing : -2.5%;
+                }
+
+
+                #logo-text2 {
+                    height : 23px;
+                    margin-top : 3px;
+
+                    font-size : 14px;
+                    font-weight : normal;
+                    color : white;
+                    line-height : auto;
+                    letter-spacing : 19%;
+                }
+
+            }
+
+
+            #nav {
+                display : flex;
+                width : 939px;
+                height : 72px;
+                margin-top : 38px;
+                padding : 10px;
+                gap : 17px;
+
+                float : right;
+                box-sizing : border-box;
+
+
+                .nav-item {
+                    height : 52px;
+                    padding : 10px 18px;
+
+                    font-size : 21px;
+                    font-weight : $font_weight_medium;
+                    line-height : auto;
+                    letter-spacing : 0%;
+                }
+
+
+                .nav-img {
+                    height : 52px;
+                    padding : 11.5px 30px;
+
+
+                    > img {
+                        width : 29px;
+                        height : 29px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    #welcome {
+        width : 100vw;
+        height : 892px;
+        padding-top : 9px;
+
+        background :
+            linear-gradient(93deg, #6d96fc00 70%, #6d96fcab 180%),
+            url('../images/w.png') no-repeat 40vw 105px / auto 787px
+        ;
+        
+
+        #welcome-container {
+            max-width : 1378px;
+            margin : 0 auto;
+
+
+            #welcome-text {
+                display : flex;
+                flex-direction : column;
+                width : 819px;
+                padding-top : 185px;
+
+
+                #welcome-text1 {
+                    font-family : $font_family_medium;
+                    font-size : 21px;
+                    font-weight : $font_weight_medium;
+                    color : #6D95FC;
+                    line-height : auto;
+                    letter-spacing : 14.5%;
+                }
+
+
+                #welcome-text2 {
+                    margin-top : 43px;
+
+                    font-family : $font_family_medium;
+                    font-size : 80px;
+                    font-weight : bold;
+                    line-height : 111.5%;
+                    letter-spacing : 1.5%;
+
+
+                    > span {
+                        color : #6D95FC;
+                    }
+
+                }
+
+
+                #welcome-text3 {
+                    height : 86px;
+
+
+                    > img {
+                        width : 144px;
+                        height : 86px;
+                    }
+
+                }
+
+
+                #welcome-text4 {
+                    font-family : $font_family_light;
+                    font-size : 21px;
+                    font-weight : light;
+                    line-height : auto;
+                    letter-spacing : 0%;
+                }
+
+
+                #welcome-text5 {
+                    margin-top : 43px;
+
+
+                    > button {
+                        width : 175px;
+                        height : 46px;
+                        padding : 10px 16px;
+
+                        background-color : transparent;
+                        border : 3px solid #6D95FC;
+                        border-radius : 2px;
+
+                        font-family : $font_family_regular;
+                        font-size : 17px;
+                        color : white;
+                        line-height : auto;
+                        letter-spacing : 14.5%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
